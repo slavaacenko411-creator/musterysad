@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- шрифти -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marck+Script&family=Lora:ital@0;1&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ruslan+Display&family=Lora:ital@0;1&display=swap" rel="stylesheet">
+    <!-- стилі -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Стати садівником</title>
+</head>
+<body>
+<div class="header">
+		<h1 id="start">Орден нічних садівників</h1>
+		<p>ми ростимо те, чого не видно вдень</p>
+</div>
+    <div class="nav">
+		<a href="index.html">☽ Повернутись до саду ☾</a>
+	</div>
+	<audio autoplay loop controls>
+  <source src="music.mp3" type="audio/mpeg">
+</audio>
+	<div class="main">
+		<h1><span class="star">✿</span> Стань одним з нас <span class="star">✿</span></h1>
+		<p>Перш ніж долучитись до таємного ордену нічних садівників необхідно заповнити невелику анкету, це займе менше 5 хвилин. Усі ваші дані неодмінно потраплять до чужих рук.</p>
+		<section id="join">
+			<h2>Стати нічним садівником</h2>
+			<p>Відповідай чесно. Сад відчує брехню.</p>
+			<div class="application" id="application">
+				<label>1. Ваше ім'я (або те, ким ви хочете бути)</label>
+				<input type="text">
+				<label>2. Ваша країна проживання</label>
+				<input type="text">
+				<label>3. Чи є у вас хатні рослини?</label>
+				<select>
+					<option>Так</option>
+					<option>Ні</option>
+				</select>
+				<label>4. Вам більше подобається троянда чи ромашка?</label>
+				<select>
+					<option>Троянда</option>
+					<option>Ромашка</option>
+				</select>
+				<label>5. Ви вмієте мовчати?</label>
+				<select>
+					<option>Так</option>
+					<option>Я постараюсь</option>
+				</select>
+				<label>6. Які країни ви відвідали за останні 2 роки?</label>
+				<input type="text">
+				<label>7. Яку квітку ви б ніколи не зірвали?</label>
+				<input type="text">
+				<label>8. У вас були проблеми з законом?</label>
+				<select>
+					<option>Так</option>
+					<option>Ні</option>
+				</select>
+				<label>9. Вам сняться сни про рослини?</label>
+				<select>
+					<option>Іноді</option>
+					<option>Ніколи</option>
+				</select>
+				<label>10. Як ви ставитесь до благодійності?</label>
+				<select>
+					<option>Дуже позитивно</option>
+					<option>Це не моє</option>
+				</select>
+				<label>11. Ви садили дерева?</label>
+				<select>
+					<option>Так, звісно</option>
+					<option>Ні, пробачте мені</option>
+				</select>
+				<label>12. Чому Сад має відкритися саме вам?</label>
+		          <textarea rows="3"></textarea>
+		          <button type="button" onclick="sendApplication()">Надіслати до верховних садівників</button>
+		     
+			</div>
+			<p class="final" id="final">
+		          	❀ Анкету надіслано. Очікуйте, коли наші брати та сестри знайдуть вас ❀
+		          </p>
+		</section>
+	</div>
+	<footer>
+		<p>✦ ❀ ✦</p>
+		<p>Ви наш 77 відвідувач</p>
+		<p>Сад в останнє квітнув <em>невідомо коли</em></pre></p>
+		
+		
+		<p class="secret">Квітка, яку ви шукаєте, росте під вашим вікном</p>
+		<a href="#start" class="up">↑ На гору ↑</a>
+         <div class="text1">
+         	<div class="contacts">
+         		<div class="contact-item">
+         			<h2>Наші соцмережі:</h2>
+         			<p>Нас немає в соцмережах.</p>
+         		</div>
+         		<div class="contact-item">
+         			<h2>Наші контакти:</h2>
+         			<p>Ми вас самі знайдемо.</p>
+         		</div>
+         	</div>
+			<p class="small">© Орден Нічних Садівників, рік невідомий</p>
+		</div>
+		
+	</footer>
+
+	<!-- скрипт анкети -->
+	<script>
+	function sendApplication() {
+		document.getElementById("application").style.display = "none";
+		document.getElementById("final").style.display = "block";
+	}
+</script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marck+Script&family=Lora:ital@0;1&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ruslan+Display&family=Lora:ital@0;1&display=swap" rel="stylesheet">
+    <!-- стилі -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Пожертви</title>
+</head>
+<body>
+<div class="header">
+		<h1 id="start">Орден нічних садівників</h1>
+		<p>ми ростимо те, чого не видно вдень</p>
+	</div>
+	<div class="nav">
+		<a href="index.html">☽ Повернутись до саду ☾</a>
+	</div>
+	<audio autoplay loop controls>
+  <source src="music.mp3" type="audio/mpeg">
+</audio>
+	<div class="payblock" id="payblock">
+			<div class="textM">
+			<h2>Форма для оплати</h2>
+		    <p>Вкажіть реквізити вашої картки та суму пожертви.</p>
+		    <p class="small">Ми працюємо з будь-яким банком світу.</p>
+		</div>
+		<div class="money" id="money">
+			<label>Номер картки</label>
+			<input type="text">
+			<label>Термін дії</label>
+			<input type="text">
+			<label>CVV-код</label>
+			<input type="text">
+			<label>Сума пожертви</label>
+			<select>
+				<option>10$</option>
+				<option>50$</option>
+				<option>100$</option>
+				<option>200$</option>
+				<option>500$</option>
+				<option>1000$</option>
+			</select>
+			<button type="button" onclick="sendApplication()">Надіслати</button>
+		</div>
+	</div>
+	<p class="final" id="final">
+		          	❀ Сад задоволений вами. ❀
+		          </p>
+<!-- скрипт пожертви -->
+	<script>
+	function sendApplication() {
+		document.getElementById("payblock").style.display = "none";
+		document.getElementById("final").style.display = "block";
+	}
+</script>
+</body>
+</html>
